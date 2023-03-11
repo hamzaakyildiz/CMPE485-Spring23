@@ -1177,3 +1177,21 @@ Received Import Request.
   path: Assets/Prefabs/Sphere.prefab
   artifactKey: Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Sphere.prefab using Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d382cc42010b3d7cd1c52435f80436') in 0.090430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 131.552274 seconds.
+  path: Assets/Prefabs/Sphere.prefab
+  artifactKey: Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sphere.prefab using Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730cbd8684a4dd609159f11bb371345a') in 0.013986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.184446 seconds.
+  path: Assets/Prefabs/Sphere.prefab
+  artifactKey: Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sphere.prefab using Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b36cf95716f5035a692d69ecbb0574') in 0.019242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.050906 seconds.
+  path: Assets/Prefabs/Sphere.prefab
+  artifactKey: Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sphere.prefab using Guid(2519d3d967c9d4020a3528273b1d81bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76004647152ed33756c8d28eb6f1a8a') in 0.013785 seconds 
