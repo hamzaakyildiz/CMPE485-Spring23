@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveableObject : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private Vector3 rbForce = new Vector3(0.1f,0f,0f);
+    [SerializeField] private int forceMul;
     
     void Start()
     {
@@ -13,8 +13,24 @@ public class MoveableObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        rb.AddForce(rbForce,ForceMode.Force);
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(Vector3.left * forceMul,ForceMode.Force);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(Vector3.back* forceMul,ForceMode.Force);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(Vector3.right* forceMul,ForceMode.Force);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(Vector3.forward* forceMul,ForceMode.Force);
+        }
+        
     }
 }
