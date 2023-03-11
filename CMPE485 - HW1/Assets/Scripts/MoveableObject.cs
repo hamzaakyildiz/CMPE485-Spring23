@@ -9,7 +9,7 @@ public class MoveableObject : MonoBehaviour
     
     void Start()
     {
-        
+        FollowBall.instance.SetTarget(transform);
     }
 
     // Update is called once per frame

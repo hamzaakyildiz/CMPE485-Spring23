@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba651122-643a-4490-b54b-8847e36889f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
     </list>
@@ -12,6 +13,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveableObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -89,7 +91,7 @@
       <workItem from="1678550830955" duration="99000" />
       <workItem from="1678551071679" duration="436000" />
       <workItem from="1678551945741" duration="65000" />
-      <workItem from="1678552078505" duration="713000" />
+      <workItem from="1678552078505" duration="1626000" />
     </task>
     <servers />
   </component>
