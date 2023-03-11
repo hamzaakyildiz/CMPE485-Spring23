@@ -526,3 +526,138 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 585.066508 seconds.
+  path: Assets/Cube.physicMaterial
+  artifactKey: Guid(dd0e4353f240748c4b92cf4ace8ddb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cube.physicMaterial using Guid(dd0e4353f240748c4b92cf4ace8ddb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9259fc155057f5b68fc68c3b9edac079') in 0.149679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.804864 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(742585319bf6b438da8329503ed6fcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(742585319bf6b438da8329503ed6fcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b83ca13e4862bc0f81dd0c0631763f2') in 0.002575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.393842 seconds.
+  path: Assets/Materials/BalMat.mat
+  artifactKey: Guid(695c2846edfee4a899fa64ba875547a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BalMat.mat using Guid(695c2846edfee4a899fa64ba875547a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ed94935bc7a07ad866c11ef2f14752') in 0.719350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.588042 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(2c1898cbf4abd4f73827a6b691312b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(2c1898cbf4abd4f73827a6b691312b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9493ac761d642d9bf8c403d7694b416') in 0.001301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.992817 seconds.
+  path: Assets/Textures/vector-basketball-texture-background.jpg
+  artifactKey: Guid(d32f9025a02a342e480b57560e608775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/vector-basketball-texture-background.jpg using Guid(d32f9025a02a342e480b57560e608775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9bfeb6de21a21f948be117cde9b360') in 0.345752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.625256 seconds.
+  path: Assets/Textures/BalTex.jpg
+  artifactKey: Guid(d32f9025a02a342e480b57560e608775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BalTex.jpg using Guid(d32f9025a02a342e480b57560e608775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b708fb1a23bfdf9d1d77453841f48dd2') in 0.013807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 179.909373 seconds.
+  path: Assets/Textures/Grass001_1K_Color.jpg
+  artifactKey: Guid(f8edf6d66498342bbbc9ca6712d7f353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Grass001_1K_Color.jpg using Guid(f8edf6d66498342bbbc9ca6712d7f353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5678e9d078af0ff619c0fc7544592e87') in 0.015284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.111972 seconds.
+  path: Assets/Textures/BaseTex.jpg
+  artifactKey: Guid(f8edf6d66498342bbbc9ca6712d7f353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BaseTex.jpg using Guid(f8edf6d66498342bbbc9ca6712d7f353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f49f2e85dcdeb770a7ce82420f64b4') in 0.009864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.890801 seconds.
+  path: Assets/Materials/GroundMat.mat
+  artifactKey: Guid(54d4e4365e2004a0fa804c6c07867d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GroundMat.mat using Guid(54d4e4365e2004a0fa804c6c07867d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72675668b935b6168237f463a04a748') in 0.016217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.685471 seconds.
+  path: Assets/Materials/ObstacleMat.mat
+  artifactKey: Guid(a786289509e8442eab31b39a59f520e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ObstacleMat.mat using Guid(a786289509e8442eab31b39a59f520e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8cec6831f013dba58c34f4aea9a2cb') in 0.012416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.979912 seconds.
+  path: Assets/Textures/Bricks059_1K_Color.jpg
+  artifactKey: Guid(14605880d468347019dd50380018d9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks059_1K_Color.jpg using Guid(14605880d468347019dd50380018d9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace1cc9697c96f159a611e489a1d24b6') in 0.035615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.761718 seconds.
+  path: Assets/Textures/WallTex.jpg
+  artifactKey: Guid(14605880d468347019dd50380018d9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/WallTex.jpg using Guid(14605880d468347019dd50380018d9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987a7dc563687683a9f8afd42622af50') in 0.008989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.816303 seconds.
+  path: Assets/Materials/WallMat.mat
+  artifactKey: Guid(697f64e0556364227ab6aa8b4d733f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallMat.mat using Guid(697f64e0556364227ab6aa8b4d733f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1c7626e72983fcc0e8641697a75c5b') in 0.011767 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002504 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/hamza.akyildiz/Desktop/BOUN/CMPE485/CMPE485-Spring23/CMPE485 - HW1/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/hamza.akyildiz/Desktop/BOUN/CMPE485/CMPE485-Spring23/CMPE485 - HW1/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.388 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1389ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (1054ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (420ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (412ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3043 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (68.0 KB). Loaded Objects now: 3572.
+Memory consumption went from 121.4 MB to 121.4 MB.
+Total: 4.280356 ms (FindLiveObjects: 0.350010 ms CreateObjectMapping: 0.200919 ms MarkObjects: 3.602518 ms  DeleteObjects: 0.125639 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
