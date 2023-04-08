@@ -9,20 +9,24 @@ namespace Player
 		private bool _isGrounded;
 
 		private readonly float _jumpForce = 250f;
+
+
+		[HideInInspector] public float forwardInput;
+		[HideInInspector] public float horizontalInput;
 		
 		
 		[HideInInspector]
-		public float forwardInput = 0;
-		[HideInInspector]
-		public float horizontalInput = 0;
+		public  Animations playerAnimations;
 
-
-
+		private void Awake()
+		{
+			playerAnimations = GetComponentInChildren<Animations>();
+		}
 		// Start is called before the first frame update
 		private void Start()
 		{
 			_rb = GetComponent<Rigidbody>();
-			_currentSpeed = 300.0f;
+			_currentSpeed = 2.0f;
 		}
 
 		// Update is called once per frame
@@ -31,6 +35,7 @@ namespace Player
 			if (!Input.GetKeyDown(KeyCode.R)) return;
 			_rb.velocity = Vector3.zero;
 			_rb.angularVelocity = Vector3.zero;
+			
 		}
 		
 
@@ -39,13 +44,18 @@ namespace Player
 			forwardInput = Input.GetAxis("Vertical");
 			horizontalInput = Input.GetAxis("Horizontal");
 			
-			Vector3 directionVector = new Vector3(forwardInput, 0, horizontalInput);
+			Vector3 directionVector = new Vector3(horizontalInput, 0, forwardInput);
 			directionVector.Normalize();
-			
-			
-			Vector3 vel = ((transform.forward * forwardInput) + (transform.right * horizontalInput)) * _currentSpeed / 100f;
-			_rb.velocity = new Vector3(vel.x, _rb.velocity.y, vel.z);
 
+			transform.Translate(directionVector * (_currentSpeed * Time.deltaTime),Space.World);
+			
+			if (directionVector.magnitude != 0)
+			{
+				Quaternion toRotation = Quaternion.LookRotation(directionVector, Vector3.up);
+				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 100f * Time.deltaTime);
+			}
+
+			
 		}
 		
 		public void Jump()

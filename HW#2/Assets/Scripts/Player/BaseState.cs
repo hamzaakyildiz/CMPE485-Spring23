@@ -18,9 +18,7 @@ public class BaseState
 		playerController = psm.GetPlayerController();
 	}
 
-	public virtual void Enter() {
-		Debug.Log("Now entering: " + StateName);
-	}
+	public virtual void Enter() { }
 	public virtual void UpdateLogic() { }
 	public virtual void UpdatePhysics() { }
 	public virtual void Exit() { }

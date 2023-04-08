@@ -6,6 +6,11 @@ public class GroundedState : BaseState
 {
 
 	public GroundedState(PlayerStateMachine psm) : base("Grounded", psm) { }
+	
+	public override void Enter()
+	{
+		playerController.playerAnimations.ChangeAnimation("Grounded");
+	}
 
 	public override void UpdateLogic()
 	{

@@ -9,7 +9,10 @@ public class JumpingState : BaseState
 
 	public override void Enter()
 	{
+		//playerController.playerAnimations.ChangeAnimation("Jumping");
+
 		playerController.Jump();
+
 	}
 
 	public override void UpdateLogic()
@@ -27,6 +30,7 @@ public class JumpingState : BaseState
 	public override void UpdatePhysics()
 	
 	{
+		playerController.Move();
 		if (playerController.GetVerticalVelocity() < 0) //falling, so accelerate faster for better gamefeel
 		{
 			playerController.AddGravity(3f);

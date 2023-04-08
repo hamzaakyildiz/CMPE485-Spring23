@@ -7,6 +7,10 @@ public class MovingState : BaseState
 
     public MovingState(PlayerStateMachine psm) : base("Moving", psm) { }
     
+    public override void Enter()
+    {
+        playerController.playerAnimations.ChangeAnimation("Moving");
+    }
 
     public override void UpdateLogic()
     {
