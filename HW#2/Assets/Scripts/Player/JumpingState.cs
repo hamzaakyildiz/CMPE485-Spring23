@@ -1,43 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class JumpingState : BaseState
+namespace Player
 {
-
-	public JumpingState(PlayerStateMachine psm) : base("Jumping", psm) { }
-
-	public override void Enter()
+	public class JumpingState : BaseState
 	{
-		//playerController.playerAnimations.ChangeAnimation("Jumping");
 
-		playerController.Jump();
+		public JumpingState(PlayerStateMachine psm) : base("Jumping", psm) { }
 
-	}
-
-	public override void UpdateLogic()
-	{
-		if (playerController.IsGrounded() && playerController.IsMoving())
+		public override void Enter()
 		{
-			playerStateMachine.ChangeState(playerStateMachine.movingState);
+			//playerController.playerAnimations.ChangeAnimation("Jumping");
+
+			playerController.Jump();
+
 		}
-		else if (playerController.IsGrounded())
-		{
-			playerStateMachine.ChangeState(playerStateMachine.groundedState);
-		}
-	}
 
-	public override void UpdatePhysics()
-	
-	{
-		playerController.Move();
-		if (playerController.GetVerticalVelocity() < 0) //falling, so accelerate faster for better gamefeel
+		public override void UpdateLogic()
 		{
-			playerController.AddGravity(3f);
-		} else
-		{
-			playerController.AddGravity(0.5f);
+			if (playerController.IsGrounded() && playerController.IsMoving())
+			{
+				playerStateMachine.ChangeState(playerStateMachine.movingState);
+			}
+			else if (playerController.IsGrounded())
+			{
+				playerStateMachine.ChangeState(playerStateMachine.groundedState);
+			}
 		}
-		
+
+		public override void UpdatePhysics()
+
+		{
+			playerController.Move();
+			playerController.AddGravity(playerController.GetVerticalVelocity() < 0 ? 3f : 0.5f); //falling, so accelerate faster for better game feel
+		}
 	}
 }

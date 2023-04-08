@@ -1,27 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
-using Player;
-using UnityEngine;
-
-public class BaseState
+namespace Player
 {
-	//taken from https://medium.com/c-sharp-progarmming/make-a-basic-fsm-in-unity-c-f7d9db965134
-
-	public string StateName;
-	protected PlayerStateMachine playerStateMachine;
-	protected PlayerController playerController;
-
-    public BaseState(string name, PlayerStateMachine psm)
+	public class BaseState
 	{
-		StateName = name;
-		playerStateMachine = psm;
-		playerController = psm.GetPlayerController();
-	}
+		//taken from https://medium.com/c-sharp-progarmming/make-a-basic-fsm-in-unity-c-f7d9db965134
 
-	public virtual void Enter() { }
-	public virtual void UpdateLogic() { }
-	public virtual void UpdatePhysics() { }
-	public virtual void Exit() { }
+		public string StateName;
+		protected PlayerStateMachine playerStateMachine;
+		protected PlayerController playerController;
+
+		public BaseState(string name, PlayerStateMachine psm)
+		{
+			StateName = name;
+			playerStateMachine = psm;
+			playerController = psm.GetPlayerController();
+		}
+
+		public virtual void Enter() { }
+		public virtual void UpdateLogic() { }
+		public virtual void UpdatePhysics() { }
+		public virtual void Exit() { }
 	
 
+	}
 }
