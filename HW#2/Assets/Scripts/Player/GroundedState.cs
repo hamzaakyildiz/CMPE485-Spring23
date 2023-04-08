@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GroundedState : BaseState
+{
+
+	public GroundedState(PlayerStateMachine psm) : base("Grounded", psm) { }
+
+	public override void UpdateLogic()
+	{
+		if (playerController.IsJumping())
+		{
+			playerStateMachine.ChangeState(playerStateMachine.jumpingState);
+		}
+		else if(playerController.IsMoving())
+		{
+			playerStateMachine.ChangeState(playerStateMachine.movingState);
+		}
+	}
+
+}
