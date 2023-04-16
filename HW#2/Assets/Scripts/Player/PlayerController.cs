@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player
@@ -18,6 +19,9 @@ namespace Player
 		[HideInInspector]
 		public  Animations playerAnimations;
 
+		private Transform _heldObject;
+		private bool _isHolding = false;
+
 		private void Awake()
 		{
 			playerAnimations = GetComponentInChildren<Animations>();
@@ -26,7 +30,8 @@ namespace Player
 		private void Start()
 		{
 			_rb = GetComponent<Rigidbody>();
-			_currentSpeed = 2.0f;
+			_currentSpeed = 5.0f;
+			
 		}
 
 		// Update is called once per frame
@@ -52,7 +57,7 @@ namespace Player
 			if (directionVector.magnitude != 0)
 			{
 				Quaternion toRotation = Quaternion.LookRotation(directionVector, Vector3.up);
-				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 100f * Time.deltaTime);
+				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 1000f * Time.deltaTime);
 			}
 
 			
@@ -69,6 +74,35 @@ namespace Player
 		private void OnCollisionEnter(Collision collision)
 		{
 			_isGrounded = collision.gameObject.layer.Equals(6);
+
+			if (collision.transform.CompareTag("Holdable"))
+			{
+				_heldObject = collision.transform;
+			}
+			
+		}
+		
+		
+		private void OnCollisionStay(Collision collision)
+		{
+			if (_isHolding == true && Input.GetKey(KeyCode.E))
+			{
+				_heldObject.GetComponent<Rigidbody>().isKinematic = false;
+				_heldObject.GetComponent<Collider>().enabled = true;
+				_heldObject.transform.parent = null;
+				_isHolding = false;
+
+			}
+			else if (_heldObject != null && Input.GetKey(KeyCode.E))
+			{
+				_heldObject.GetComponent<Rigidbody>().isKinematic = true;
+				_heldObject.GetComponent<Collider>().enabled = false;
+				_heldObject.transform.parent = transform;
+				_heldObject.transform.localPosition = new Vector3(0, 0, 1);
+				_isHolding = true;
+
+			}
+	
 		}
 
 		public bool IsJumping()
@@ -94,6 +128,7 @@ namespace Player
 		{
 			return _rb.velocity.y;
 		}
+		
 		
 
 		
