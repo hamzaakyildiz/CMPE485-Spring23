@@ -30,7 +30,7 @@ namespace Player
 		private void Start()
 		{
 			_rb = GetComponent<Rigidbody>();
-			_currentSpeed = 5.0f;
+			_currentSpeed = 10.0f;
 			
 		}
 

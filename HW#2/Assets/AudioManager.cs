@@ -10,7 +10,15 @@ public class AudioManager : MonoBehaviour
 {
     
     public AudioSource AudioSource;
-    
+
+
+    public void Awake()
+    {
+        if (PlayerPrefs.GetInt("SoundVolume", 1) == 0)
+        {
+            AudioSource.volume = 0;
+        }
+    }
 
     public void SoundController()
     {
