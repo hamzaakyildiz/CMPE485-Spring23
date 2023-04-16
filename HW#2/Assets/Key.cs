@@ -12,7 +12,7 @@ public class Key : MonoBehaviour
     {
         if (other.CompareTag("Door") && isTrueKey)
         {
-            // End Game
+            UIManager.instance.Win();
         }
         else if (other.CompareTag("Door") && !isTrueKey)
         {

@@ -7,12 +7,7 @@ using UnityEngine;
 public class GameFinal : MonoBehaviour
 {
 
-    private MeshRenderer meshRenderer;
-
-    private void Awake()
-    {
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+    public Material doorMat;
 
     public void WrongKey()
     {
@@ -23,9 +18,9 @@ public class GameFinal : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            meshRenderer.material.color = Color.red;
+            doorMat.color = Color.red;
             yield return new WaitForSeconds(.25f);
-            meshRenderer.material.color = Color.white;
+            doorMat.color = Color.white;
             yield return new WaitForSeconds(.25f);
         }
 

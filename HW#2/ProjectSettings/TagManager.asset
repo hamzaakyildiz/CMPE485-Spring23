@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Holdable
   - Door
+  - Sound On
   layers:
   - Default
   - TransparentFX

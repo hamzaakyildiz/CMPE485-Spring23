@@ -60,6 +60,10 @@ namespace Player
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 1000f * Time.deltaTime);
 			}
 
+			if (transform.position.y <= -3f)
+			{
+				UIManager.instance.Lose();
+			}
 			
 		}
 		
@@ -88,7 +92,7 @@ namespace Player
 			if (_isHolding && Input.GetKey(KeyCode.E))
 			{
 				_heldObject.GetComponent<Rigidbody>().isKinematic = false;
-				//_heldObject.GetComponent<Collider>().enabled = true;
+				_heldObject.GetComponent<Collider>().enabled = true;
 				_heldObject.transform.parent = null;
 				_isHolding = false;
 
