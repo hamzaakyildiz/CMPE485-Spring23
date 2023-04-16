@@ -36,8 +36,6 @@ public class PlayerStateMachine : MonoBehaviour
     {
 		if (currentState != null)
 			currentState.UpdateLogic();
-
-		Debug.Log(currentState.StateName);
     }
 
 	void LateUpdate()

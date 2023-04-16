@@ -6,11 +6,29 @@ using UnityEngine;
 
 public class GameFinal : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+
+    private MeshRenderer meshRenderer;
+
+    private void Awake()
     {
-        if (collision.transform.CompareTag("Holdable"))
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
+    public void WrongKey()
+    {
+        StartCoroutine(TurnRed());
+    }
+    
+    public IEnumerator TurnRed()
+    {
+        for (int i = 0; i < 5; i++)
         {
-            
+            meshRenderer.material.color = Color.red;
+            yield return new WaitForSeconds(.25f);
+            meshRenderer.material.color = Color.white;
+            yield return new WaitForSeconds(.25f);
         }
+
+        this.enabled = false;
     }
 }

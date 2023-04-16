@@ -85,10 +85,10 @@ namespace Player
 		
 		private void OnCollisionStay(Collision collision)
 		{
-			if (_isHolding == true && Input.GetKey(KeyCode.E))
+			if (_isHolding && Input.GetKey(KeyCode.E))
 			{
 				_heldObject.GetComponent<Rigidbody>().isKinematic = false;
-				_heldObject.GetComponent<Collider>().enabled = true;
+				//_heldObject.GetComponent<Collider>().enabled = true;
 				_heldObject.transform.parent = null;
 				_isHolding = false;
 
